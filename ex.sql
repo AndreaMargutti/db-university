@@ -49,3 +49,5 @@ SET `office_number` = 126
 WHERE `id` = 58;
 
 -- Eliminare dalla tabella studenti il record creato precedentemente al punto 9
+DELETE FROM `students`
+WHERE `id` = 5001;

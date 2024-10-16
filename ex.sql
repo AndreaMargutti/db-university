@@ -40,3 +40,7 @@ FROM `teachers`
 WHERE `phone`IS NULL;
 
 -- Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo degree_id, inserire un valore casuale)
+INSERT INTO `students`
+VALUES (RAND(`id`), 20, "Andrea", "Margutti", "2000-03-30", "MRGNDR00C30L682G", "2019-02-21", "740056", "marguttiandrea30@gmail.com");
+
+-- Cambiare il numero dell’ufficio del professor Pietro Rizzo in 126

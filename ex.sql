@@ -44,3 +44,8 @@ INSERT INTO `students`
 VALUES (RAND(`id`), 20, "Andrea", "Margutti", "2000-03-30", "MRGNDR00C30L682G", "2019-02-21", "740056", "marguttiandrea30@gmail.com");
 
 -- Cambiare il numero dell’ufficio del professor Pietro Rizzo in 126
+UPDATE `teachers`
+SET `office_number` = 126
+WHERE `id` = 58;
+
+-- Eliminare dalla tabella studenti il record creato precedentemente al punto 9

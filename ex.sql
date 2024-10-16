@@ -31,5 +31,12 @@ FROM `degrees`
 WHERE `level` = "magistrale";
 
 -- Da quanti dipartimenti è composta l'università?
-SELECT *
+SELECT COUNT(*)
 FROM `departments`;
+
+-- Quanti sono gli insegnanti che non hanno un numero di telefono?
+SELECT COUNT(*) 
+FROM `teachers` 
+WHERE `phone`IS NULL;
+
+-- Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo degree_id, inserire un valore casuale)

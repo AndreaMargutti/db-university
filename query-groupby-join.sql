@@ -18,3 +18,12 @@ GROUP BY (`exam_id`);
 SELECT COUNT(*) AS 'CORSI', `degree_id`
 FROM `courses`
 GROUP BY (`degree_id`);
+
+-- # JOIN
+-- Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
+SELECT *
+FROM `students`
+JOIN `degrees` ON `degrees`.`id` = `degree_id`
+WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+
+-- Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze

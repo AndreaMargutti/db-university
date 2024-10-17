@@ -47,3 +47,10 @@ JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
 ORDER BY (`surname`) ASC;
 
 -- Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
+SELECT * 
+FROM `courses`
+JOIN `degrees` ON `degrees`.`id` = `degree_id`
+JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id`
+JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`;
+
+-- Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
